@@ -21,12 +21,13 @@ export class AppComponent {
     this.translate.setDefaultLang('en');
     this.pub.loaded.subscribe((value) => {
       const pd = value.children[0];
-      console.dir(pd);
       for(var i=0; i < pd.children.length; i++) {
         const entry = pd.children[i];
         const pubData = parser.parseFromString(entry.outerHTML, 'text/xml').children[0];
-        console.dir(pubData);
         this.data.push(new PubDisplay({
+          title: pubData.getAttribute('profileName'),
+          method: pubData.getAttribute('publishMethod'),
+          publishurl: pubData.getAttribute('publishUrl')
         }));
       }
       this.loaded = true;

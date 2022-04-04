@@ -7,10 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PubDetailsComponent implements OnInit {
   @Input() data: any;
-  
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
 }

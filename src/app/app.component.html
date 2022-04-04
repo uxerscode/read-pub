@@ -10,16 +10,16 @@
   <div *ngIf="loaded">
     <mat-tab-group mat-align-tabs="start">
       <mat-tab id="first" [label]="data[0].title">
-        <app-pub-details data="data[0]"></app-pub-details>
+        <app-pub-details [data]="data[0]"></app-pub-details>
       </mat-tab>
       <mat-tab id="second" [label]="data[1].title">
-        <app-pub-details data="data[1]"></app-pub-details>
+        <app-pub-details [data]="data[1]"></app-pub-details>
       </mat-tab>
       <mat-tab id="third" [label]="data[2].title">
-        <app-pub-details data="data[2]"></app-pub-details>
+        <app-pub-details [data]="data[2]"></app-pub-details>
       </mat-tab>
       <mat-tab id="fourth" [label]="data[3].title">
-        <app-pub-details data="data[3]"></app-pub-details>
+        <app-pub-details [data]="data[3]"></app-pub-details>
       </mat-tab>
     </mat-tab-group>
   </div>

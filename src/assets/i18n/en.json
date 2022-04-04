@@ -5,5 +5,8 @@
     "HOME": {
         "TITLE": "Publish Settings",
         "FILEPROMPT": "Choose a file or drag here"
+    },
+    "PUB": {
+        "METHOD": "Method"
     }
   }

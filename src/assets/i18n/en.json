@@ -1,0 +1,9 @@
+{
+    "APP": {
+        "TITLE": "Read Publish Settings"
+    },
+    "HOME": {
+        "TITLE": "Publish Settings",
+        "FILEPROMPT": "Choose a file or drag here"
+    }
+  }

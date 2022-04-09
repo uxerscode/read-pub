@@ -27,7 +27,9 @@ export class AppComponent {
         this.data.push(new PubDisplay({
           title: pubData.getAttribute('profileName'),
           method: pubData.getAttribute('publishMethod'),
-          publishurl: pubData.getAttribute('publishUrl')
+          publishurl: pubData.getAttribute('publishUrl'),
+          username: pubData.getAttribute('userName'),
+          userpwd: pubData.getAttribute('userPWD'),
         }));
       }
       this.loaded = true;
